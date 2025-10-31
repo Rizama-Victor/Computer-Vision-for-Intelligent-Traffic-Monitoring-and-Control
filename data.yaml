@@ -1,0 +1,11 @@
+names:
+- bus
+- car
+- motorcycle
+- truck
+
+nc: 4
+
+test: /content/drive/MyDrive/Computer_Vision_for_Intelligent_Traffic_Light/test/images
+train: /content/drive/MyDrive/Computer_Vision_for_Intelligent_Traffic_Light/train/images
+val: /content/drive/MyDrive/Computer_Vision_for_Intelligent_Traffic_Light/valid
