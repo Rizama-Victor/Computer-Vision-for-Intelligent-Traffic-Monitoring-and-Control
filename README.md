@@ -13,3 +13,21 @@ Conventional traffic systems struggle to adapt to changing road conditions which
 -  To develop a computer vision model capable of accurately detecting and classifying vehicles across multiple traffic lanes in real-time.
 -  To count the number of vehicles in each lane based on the real-time detection results.
 -  To dynamically adjust signal timing by assigning shorter waiting periods and longer green light durations to lanes with higher traffic density.
+
+---
+
+## 🧰 Tools and Technologies Used
+
+| Tool | Purpose in the Project |
+|--------------------|-----------------------|
+| Python | Used as the main programming language for developing and training the computer vision model, and the algorithm. |
+| OpenCV | Used for handling images, image processing, and video frame extraction. |
+| YOLOv8 | Implemented for real-time vehicle detection and classification. |
+| Ultralytics | The fram for running the traffic control system. |
+| Pytorch | Used for model training and performance evaluation. |
+| TorchVision | Used for running the YOLO model and performing the inferencing process. |
+| Gradio | Used for creating a Graphical User Interface (GUI) the model integration nad simulation of the CCTV surveillance. |
+| Google Colab | Provided computational resources such as GPU support for running and training the model. |
+| Roboflow | Used for creating a Graphical User Interface (GUI) the model integration nad simulation of the CCTV surveillance. |
+| Image | Used for displaying inferenced images, training results and test images in the program notebook. |
+| Display | Used for creating a Graphical User Interface (GUI) the model integration nad simulation of the CCTV surveillance. |
