@@ -1,6 +1,6 @@
 task: detect
 mode: train
-model: /content/drive/MyDrive/Computer_Vision_for_Intelligent_Traffic_Light/runs/detect/train/weights/last.pt
+model: /content/drive/MyDrive/Computer_Vision_for_Intelligent_Traffic_Light/runs/detect/train/weights/best.pt
 data: /content/drive/MyDrive/Computer_Vision_for_Intelligent_Traffic_Light/data.yaml
 epochs: 100
 time: null
