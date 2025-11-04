@@ -56,3 +56,15 @@ To maintain consistency across the datasets, four main classes were defined: _"b
 - **Modifying Class Ids to ensure Consistency:** This process involved consolidating similar classes into a single class. e.g classes like _container truck_, and _fire truck_ were combined into a single _truck_ class.
 - **Removing Trailing Blank Lines Between Labels:** Following the modification of class IDs for consistency, it was observed that the write operation introduced extra blank lines in the label files. To resolve this issue, all .txt files were accessed to remove any additional blank lines present between the labels.
 - **Deletion of Empty .txt Files:** After modifying the various classes, it was noticed that some .txt files were empty. As a result, all affected files, along with their corresponding .jpg files, were deleted to maintain a clean dataset.
+
+### Data Pre-processing and Augmentation
+
+#### Pre-processing Techniques
+
+- **Auto-Orientation:** This ensured all images were displayed correctly regardless of their initial orientation during capture.
+- **Image Resizing:** Resized Images to **640 X 640** pixels to align with YOLOv8 architecture for faster GPU training while retaining essential image details.
+
+#### Augmentation Techniques
+
+- **Horiontal Flips:** Flipped Images along the vertical axis to create mirrowed versions to enable the model recognize objects regardless of their left-to-right orientation.
+- **Rotation:** Rotated images by a specifc angle of **+ or - 15 degrees**, generating new instances to further enable the model to recognize objects from different perspectives and orientations.
