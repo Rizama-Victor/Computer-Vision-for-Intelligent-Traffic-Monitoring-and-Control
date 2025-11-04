@@ -27,7 +27,7 @@ Conventional traffic systems struggle to adapt to changing road conditions which
 | Pytorch | Used for model training and performance evaluation. |
 | TorchVision | Used for running the YOLO model and performing the inferencing process. |
 | Gradio | Used for creating a Graphical User Interface (GUI) the model integration nad simulation of the CCTV surveillance. |
-| Google Colab | Provided computational resources such as GPU support for running and training the model. |
+| Google Colab | Provided the virtual environment and computational resources such as GPU support for running and training the model. |
 | Roboflow | Used for hosting the dataset and performing data pre-processing. |
 | Display | Used for displaying inferenced images, training results and test images in the program notebook. |
 | Image | Used for creating python objects representing an image. |
@@ -68,3 +68,19 @@ To maintain consistency across the datasets, four main classes were defined: _"b
 
 - **Horiontal Flips:** Flipped Images along the vertical axis to create mirrowed versions to enable the model recognize objects regardless of their left-to-right orientation.
 - **Rotation:** Rotated images by a specifc angle of **+ or - 15 degrees**, generating new instances to further enable the model to recognize objects from different perspectives and orientations.
+
+### Model Training
+
+The training procedure for the model involved mounting the drive in the Google colab virtual environment, installing the ultralytics library, installing YOLO, importing the dataset from the Roboflow workspace, and finally training the model. The training time lasted for a total of 3.248 hours.
+
+## 🤖 Model Summary
+| Hyperparameter | Value |
+|------------------------|---------------------------|
+| Number of Epochs | 100 |
+| Learning Rate | 0.01 |
+| Image Input Size | 640 x 640 |
+| Total Number of Classes | 4 |
+| Batch Size | 16 |
+| Activation Function | SiLU |
+| Momentum | 0.937 |
+| Total Number of Images after Data Pre-processing and Augmentation | 5320 |
