@@ -107,25 +107,25 @@ The training procedure for the model involved mounting the drive in the Google c
   <img src="Test Image 2.jpg" alt="Detection Results for Lane 2" width="300" />
   <img src="Test Image 3.jpg" alt="Detection Results for Lane 3" width="300" /> 
     <br>
-    <em> Detection Results for Different Lanes (Sourced from a Test Video) </em>
+    <em> Fig 1: Detection Results for Different Lanes (Sourced from a Test Video) </em>
 </p>
 
 <p align="center">
     <img src="results.png" alt="The Model's Result Summary" width="1500"/>
     <br>
-    <em>The Model's Result Summary</em>
+    <em> Fig 2: The Model's Result Summary</em>
 </p>
 
 <p align="center">
     <img src="confusion_matrix.png" alt="The Confusion matrix" width="1500"/>
     <br>
-    <em>Confusion Matrix</em>
+    <em> Fig 3: Confusion Matrix</em>
 </p>
 
 ## 📈 Model Integration
 
 ### GUI Implementation
-As stated earlier, Gradio, an open source Python module, was used to create a Graphical User Interface (GUI) for implementing the traffic control model. The interface simulates CCTV surveillance by accepting four input images for Lane 1, Lane 2, Lane 3 and Lane 4. The image selection process is depicted in Figures 10, 11, 12 and 13. 
+As stated earlier, Gradio, an open source Python module, was used to create a Graphical User Interface (GUI) for implementing the traffic control model. The interface simulates CCTV surveillance by accepting four input images for Lane 1, Lane 2, Lane 3 and Lane 4. This is depicted in Fig.4 </em>)
 
 ### Traffic Prioritization Logic
  
@@ -152,7 +152,7 @@ From the table above, the total cyclic time was 59 seconds and the allocation of
   <img src="5.png" alt="Detection Results for Lane 2" width="300" />
   <img src="4.png" alt="Detection Results for Lane 3" width="300" /> 
     <br>
-    <em> Vehicle Detection and Lane Allocation Results on the Integrated Platform </em>
+    <em> Fig 4: Vehicle Detection and Lane Allocation Results on the Integrated Platform </em>
 </p>
 
 ## 📚 References
