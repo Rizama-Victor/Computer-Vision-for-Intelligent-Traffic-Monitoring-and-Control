@@ -37,7 +37,7 @@ Conventional traffic systems struggle to adapt to changing road conditions which
 
 ---
 
-## 🧠 Methodology / Step-by-Step-Procedure
+## 🧠 Model Building and Development
 
 ### Data Collection and Preparation
 Initially, a collection of 4 datasets was used to form a complete collection of 12,088 images of traffic lanes was obtained containing various classes ranging from _"buses", "cars", "motorcycle", "fire truck", "van", "pedestrians", "container truck"_ and _"bicycle"_ was gathered from Roboflow, an online computer vision platform for managing datasets and building computer vision Models.
@@ -69,6 +69,10 @@ To maintain consistency across the datasets, four main classes were defined: _"b
 - **Horiontal Flips:** Flipped Images along the vertical axis to create mirrowed versions to enable the model recognize objects regardless of their left-to-right orientation.
 - **Rotation:** Rotated images by a specifc angle of **+ or - 15 degrees**, generating new instances to further enable the model to recognize objects from different perspectives and orientations.
 
+#### Train-Test-Validation Split
+
+The train-test-validation split ratio of the dataset after pre-processing and augmentation was 80:10:10.
+
 ### Model Training
 
 The training procedure for the model involved mounting the drive in the Google colab virtual environment, installing the ultralytics library, installing YOLO, importing the dataset from the Roboflow workspace, and finally training the model. The training time lasted for a total of 3.248 hours.
@@ -84,8 +88,6 @@ The training procedure for the model involved mounting the drive in the Google c
 | Activation Function | SiLU |
 | Momentum | 0.937 |
 | Optimizer | auto (AdamW at initial layers for early convergence and SGD at final layers for fine tuning) |
-
-## 📈 Results
 
 ### Evaluation Metrics
 
@@ -111,6 +113,29 @@ The training procedure for the model involved mounting the drive in the Google c
     <br>
     <em>Confusion Matrix</em>
 </p>
+
+## 📈 Model Integration
+
+### GUI Implementation
+As stated earlier, Gradio, an open source Python module, was used to create a Graphical User Interface (GUI) for implementing the traffic control model. The interface simulates CCTV surveillance by accepting four input images for Lane 1, Lane 2, Lane 3 and Lane 4. The image selection process is depicted in Figures 10, 11, 12 and 13. 
+
+### Traffic Prioritization Logic
+ 
+ - **Emergency Vehicle Prioritization:** Input images passed into the model were processed for **emergency vehicle** detection and **IF DETECTED**, the lane with emergency vehicle is prioritized immediately and **IF NOT DETECTED**, the traffic density is calculated for each lane and the lane with the least traffic density is prioritized first.
+
+### Commute Time Calculation
+The commute time calculation involved computing the average time for each vehicle type, and summing across all detected vehicle types to get the total commute time per lane.
+
+### Result from Model Integration
+
+| Lane | Vehicle Detected | Count | Commute Time (Seconds) |
+|------------------------|---------------------------|---------------------|-------------|
+| Lane 4 | 2 cars | 2 | 10 |
+| Lane 1 | 7 vehicles (cars, motorcycles, truck) | 7 | 16 |
+| Lane 2 | 11 vehicles (motorcycles, cars) | 11 | 16 |
+| Lane 3 | 11 vehicles (motorcycles, cars) | 11 | 17 |
+
+From the table above, the total cyclic time was 59 seconds and the allocation of green light sequence would be from the lane with the lowest commute time to that with the highest commute time (In this scenario, Lane 4 → Lane 1 → Lane 2 → Lane 3).
 
 ## 📚 References
 Obi-Obuoha A. , Rizama V.S. _"Computer Vision for Intelligent Traffic Monitoring and Control"_ Iconic Research And Engineering Journals Volume 8 Issue 5 2024 Page 392-405.
