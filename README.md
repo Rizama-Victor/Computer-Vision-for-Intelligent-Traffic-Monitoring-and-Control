@@ -99,6 +99,10 @@ The training procedure for the model involved mounting the drive in the Google c
 | Box Loss | 0.722 |
 | Object Loss | 0.455 |
 
+## 📚 References
+Obi-Obuoha Abiamamela , Rizama Victor Samuel _"Computer Vision for Intelligent Traffic Monitoring and Control"_ Iconic Research And Engineering Journals Volume 8 Issue 5 2024 Page 392-405.
+[Access the Full Paper](https://www.irejournals.com/formatedpaper/1706535.pdf)
+
 ## 📌 Note
 Dataset and Model Weights can be provided upon request.
 
