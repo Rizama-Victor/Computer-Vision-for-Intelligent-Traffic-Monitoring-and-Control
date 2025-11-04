@@ -103,9 +103,9 @@ The training procedure for the model involved mounting the drive in the Google c
 | Object Loss | 0.455 |
 
 <p align="center">
-  <img src="Test Image 1.jpg" alt="Detection Results for Lane 1" width="300" />
-  <img src="Test Image 2.jpg" alt="Detection Results for Lane 2" width="300" />
-  <img src="Test Image 3.jpg" alt="Detection Results for Lane 3" width="300" /> 
+  <img src="Test Image 1.jpg" alt="Detection Results for Lane 1" width="250" />
+  <img src="Test Image 2.jpg" alt="Detection Results for Lane 2" width="250" />
+  <img src="Test Image 3.jpg" alt="Detection Results for Lane 3" width="250" /> 
     <br>
     <em> Fig 1: Detection Results for Different Lanes (Sourced from a Test Video) </em>
 </p>
@@ -146,11 +146,11 @@ The commute time calculation involved computing the average time for each vehicl
 From the table above, the total cyclic time was 59 seconds and the allocation of green light sequence would be from the lane with the lowest commute time to that with the highest commute time (In this scenario, Lane 4 → Lane 1 → Lane 2 → Lane 3).
 
 <p align="center">
-  <img src="1.png" alt="Detection Results for Lane 1" width="300" />
-  <img src="2.png" alt="Detection Results for Lane 2" width="300" />
-  <img src="3.png" alt="Detection Results for Lane 3" width="300" /> 
-  <img src="5.png" alt="Detection Results for Lane 2" width="300" />
-  <img src="4.png" alt="Detection Results for Lane 3" width="300" /> 
+  <img src="1.png" alt="Detection Results for Lane 1" width="250" />
+  <img src="2.png" alt="Detection Results for Lane 2" width="250" />
+  <img src="3.png" alt="Detection Results for Lane 3" width="250" /> 
+  <img src="5.png" alt="Detection Results for Lane 2" width="250" />
+  <img src="4.png" alt="Detection Results for Lane 3" width="250" /> 
     <br>
     <em> Fig 4: Vehicle Detection and Lane Allocation Results on the Integrated Platform </em>
 </p>
