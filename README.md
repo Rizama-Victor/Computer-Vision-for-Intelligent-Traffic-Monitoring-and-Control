@@ -89,12 +89,6 @@ The training procedure for the model involved mounting the drive in the Google c
 
 ### Evaluation Metrics
 
-<p align="center">
-    <img src="Computer-Vision-for-Intelligent-Traffic-Monitoring-and-Control/results.png" alt="The Model Results Summary" width="1500"/>
-    <br>
-    <em>The Model Results Summary</em>
-</p>
-
 | Metric | Value |
 |------------------------|---------------------------| 
 | Precision | 0.774 |
@@ -105,6 +99,18 @@ The training procedure for the model involved mounting the drive in the Google c
 | F1-Score | 0.830 |
 | Box Loss | 0.722 |
 | Object Loss | 0.455 |
+
+<p align="center">
+    <img src="results.png" alt="The Model Results Summary" width="1500"/>
+    <br>
+    <em>The Model Results Summary</em>
+</p>
+
+<p align="center">
+    <img src="confusion_matrix.png" alt="The Confusion matrix" width="1500"/>
+    <br>
+    <em>Confusion Matrix</em>
+</p>
 
 ## 📚 References
 Obi-Obuoha A. , Rizama V.S. _"Computer Vision for Intelligent Traffic Monitoring and Control"_ Iconic Research And Engineering Journals Volume 8 Issue 5 2024 Page 392-405.
