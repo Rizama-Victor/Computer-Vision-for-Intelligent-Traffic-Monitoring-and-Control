@@ -91,16 +91,17 @@ The training procedure for the model involved mounting the drive in the Google c
 
 ### Evaluation Metrics
 
-| Metric | Value |
-|------------------------|---------------------------| 
-| Precision | 0.774 |
-| Recall | 0.894 |
-| IoU | 0.700 |
-| mAP@50 | 0.893 |
-| mAP@50-95 | 0.701 |
-| F1-Score | 0.830 |
-| Box Loss | 0.722 |
-| Object Loss | 0.455 |
+| **Metric**      | **Value** | **Remarks**                                                                                                        |
+| --------------- | --------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Precision**   | 0.774     | The model correctly identified most vehicles, with few false positives.                                            |
+| **Recall**      | 0.894     | Indicated high sensitivity meaning the system successfully detected most vehicles in traffic scenes.                     |
+| **IoU**         | 0.700     | Showed good overlap between predicted and actual bounding boxes, meaning accurate localization.                     |
+| **mAP@50**      | 0.893     | Demonstrated strong detection accuracy at a relaxed IoU threshold (50%), showing reliable recognition performance. |
+| **mAP@50-95**   | 0.701     | Reflected consistent detection performance across multiple IoU thresholds, indicating robust model generalization.  |
+| **F1-Score**    | 0.830     | Balanced trade-off between precision and recall — overall strong detection reliability.                            |
+| **Box Loss**    | 0.722     | Indicated a moderate box regression error but also suggesting some room for improving bounding box precision.                            |
+| **Object Loss** | 0.455     | Indicated effective object classification, with minimal misidentification during detection.                        |
+
 
 <p align="center">
   <img src="Test Image 1.jpg" alt="Detection Results for Lane 1" width="250" />
@@ -154,6 +155,9 @@ From the table above, the total cyclic time was 59 seconds and the allocation of
     <br>
     <em> Fig 4: Vehicle Detection and Lane Allocation Results on the Integrated Platform </em>
 </p>
+
+## 🔮Future Work
+- Future research efforts should focus on enhancing the model’s accuracy, especially those capable of effectively handling visibility challenges under adverse weather condition.
 
 ## 📚 References
 Obi-Obuoha A. , Rizama V.S. _"Computer Vision for Intelligent Traffic Monitoring and Control"_ Iconic Research And Engineering Journals Volume 8 Issue 5 2024 Page 392-405.
