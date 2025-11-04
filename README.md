@@ -160,5 +160,5 @@ Obi-Obuoha A. , Rizama V.S. _"Computer Vision for Intelligent Traffic Monitoring
 [Access the Full Paper](https://www.irejournals.com/formatedpaper/1706535.pdf)
 
 ## 📌 Note
-Dataset and Model Weights can be provided upon request.
+Please kindly note that this README file is a summarized version of the full implementation of this research. The complete implementation can be accessed via the [program script](Computer_Vision_for_Intelligent_Traffic_Monitoring_and_Control.ipynb) and [interface implementation](Computer_Vision_for_Intelligent_Traffic_Monitoring_and_Contol-Gradio.ipynb). Dataset and Model Weights can be provided upon request.
 
