@@ -73,7 +73,7 @@ To maintain consistency across the datasets, four main classes were defined: _"b
 
 The training procedure for the model involved mounting the drive in the Google colab virtual environment, installing the ultralytics library, installing YOLO, importing the dataset from the Roboflow workspace, and finally training the model. The training time lasted for a total of 3.248 hours.
 
-## 🤖 Model Summary
+### 🤖 Model Summary
 | Hyperparameter | Value |
 |------------------------|---------------------------|
 | Number of Epochs | 100 |
@@ -83,4 +83,22 @@ The training procedure for the model involved mounting the drive in the Google c
 | Batch Size | 16 |
 | Activation Function | SiLU |
 | Momentum | 0.937 |
-| Total Number of Images after Data Pre-processing and Augmentation | 5320 |
+| Optimizer | auto (AdamW at initial layers for early convergence and SGD at final layers for fine tuning) |
+
+## 📈 Results
+
+### Evaluation Metrics
+| Metric | Value |
+|------------------------|---------------------------|
+| Precision | 0.774 |
+| Recall | 0.894 |
+| IoU | 0.700 |
+| mAP@50 | 0.893 |
+| mAP@50-95 | 0.701 |
+| F1-Score | 0.830 |
+| Box Loss | 0.722 |
+| Object Loss | 0.455 |
+
+## 📌 Note
+Dataset and Model Weights can be provided upon request.
+
