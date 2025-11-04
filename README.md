@@ -34,3 +34,25 @@ Conventional traffic systems struggle to adapt to changing road conditions which
 | Shutil | Used for high-level image file operations. |
 | CSV | Used for for reading and writing to .txt files. |
 | Codecs | Used for manipulation of video data. |
+
+---
+
+## 🧠 Methodology / Step-by-Step-Procedure
+
+### Data Collection and Preparation
+Initially, a collection of 4 datasets was used to form a complete collection of 12,088 images of traffic lanes was obtained containing various classes ranging from _"buses", "cars", "motorcycle", "fire truck", "van", "pedestrians", "container truck"_ and _"bicycle"_ was gathered from Roboflow, an online computer vision platform for managing datasets and building computer vision Models.
+
+### Labelling / Annotation
+All four datasets were provided in the You Only Look Once (YOLO) format, with each image accompanied by its corresponding .txt file containing the labels. The respective classes for the 4 different Datasets included:
+- **Dataset 1:** bus, car, motorcycle, and truck.
+- **Dataset 2:** bus, container truck, fire truck, bicycle, car, motorcycle, truck and van.
+- **Dataset 3:** bus, car, motorcycle, and truck.
+- **Dataset 4:** bus, car, and truck.
+
+### Data Cleaning and Structuring
+To maintain consistency across the datasets, four main classes were defined: _"bus", "car", "motorcycle",_ and _"truck"_. This process involved removing irrelevant class labels, such as bicycle and van, from the .txt files associated with each image. Additionally, classes like container truck and fire truck were consolidated into the truck category by updating their class IDs. The techniques used during the data cleanng and structurig procedure include:
+
+- **Deleting a Class Instance from .txt files:** This was used to removing irrelevant class labels such as _bicycle_ and _van_.
+- **Modifying Class Ids to ensure Consistency:** This process involved consolidating similar classes into a single class. e.g classes like _container truck_, and _fire truck_ were combined into a single _truck_ class.
+- **Removing Trailing Blank Lines Between Labels:** Following the modification of class IDs for consistency, it was observed that the write operation introduced extra blank lines in the label files. To resolve this issue, all .txt files were accessed to remove any additional blank lines present between the labels.
+- **Deletion of Empty .txt Files:** After modifying the various classes, it was noticed that some .txt files were empty. As a result, all affected files, along with their corresponding .jpg files, were deleted to maintain a clean dataset.
