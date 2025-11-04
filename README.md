@@ -101,9 +101,9 @@ The training procedure for the model involved mounting the drive in the Google c
 | Object Loss | 0.455 |
 
 <p align="center">
-    <img src="results.png" alt="The Model Results Summary" width="1500"/>
+    <img src="results.png" alt="The Model's Result Summary" width="1500"/>
     <br>
-    <em>The Model Results Summary</em>
+    <em>The Model's Result Summary</em>
 </p>
 
 <p align="center">
