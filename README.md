@@ -18,16 +18,19 @@ Conventional traffic systems struggle to adapt to changing road conditions which
 
 ## 🧰 Tools and Technologies Used
 
-| Tool | Purpose in the Project |
+| Tool/Libraries | Purpose in the Project |
 |--------------------|-----------------------|
 | Python | Used as the main programming language for developing and training the computer vision model, and the algorithm. |
 | OpenCV | Used for handling images, image processing, and video frame extraction. |
 | YOLOv8 | Implemented for real-time vehicle detection and classification. |
-| Ultralytics | The fram for running the traffic control system. |
+| Ultralytics | Provided the implementation of YOLO used for both training and inferencing with the YOLO-based model for the real-time vehicle detection and classification. |
 | Pytorch | Used for model training and performance evaluation. |
 | TorchVision | Used for running the YOLO model and performing the inferencing process. |
 | Gradio | Used for creating a Graphical User Interface (GUI) the model integration nad simulation of the CCTV surveillance. |
 | Google Colab | Provided computational resources such as GPU support for running and training the model. |
-| Roboflow | Used for creating a Graphical User Interface (GUI) the model integration nad simulation of the CCTV surveillance. |
-| Image | Used for displaying inferenced images, training results and test images in the program notebook. |
-| Display | Used for creating a Graphical User Interface (GUI) the model integration nad simulation of the CCTV surveillance. |
+| Roboflow | Used for hosting the dataset and performing data pre-processing. |
+| Display | Used for displaying inferenced images, training results and test images in the program notebook. |
+| Image | Used for creating python objects representing an image. |
+| Shutil | Used for high-level image file operations. |
+| CSV | Used for for reading and writing to .txt files. |
+| Codecs | Used for manipulation of video data. |
