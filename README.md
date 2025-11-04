@@ -88,8 +88,15 @@ The training procedure for the model involved mounting the drive in the Google c
 ## 📈 Results
 
 ### Evaluation Metrics
+
+<p align="center">
+    <img src="Computer-Vision-for-Intelligent-Traffic-Monitoring-and-Control/results.png" alt="The Model Results Summary" width="1500"/>
+    <br>
+    <em>The Model Results Summary</em>
+</p>
+
 | Metric | Value |
-|------------------------|---------------------------|
+|------------------------|---------------------------| 
 | Precision | 0.774 |
 | Recall | 0.894 |
 | IoU | 0.700 |
