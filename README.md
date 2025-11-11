@@ -10,6 +10,7 @@ Conventional traffic systems struggle to adapt to changing road conditions which
 
 ## 🎯 Research Objectives
 
+-  To curate a high-quality dataset of different vehicle types specifically at traffic intersections.
 -  To develop a computer vision model capable of accurately detecting and classifying vehicles across multiple traffic lanes in real-time.
 -  To count the number of vehicles in each lane based on the real-time detection results.
 -  To dynamically adjust signal timing by assigning shorter waiting periods and longer green light durations to lanes with higher traffic density.
