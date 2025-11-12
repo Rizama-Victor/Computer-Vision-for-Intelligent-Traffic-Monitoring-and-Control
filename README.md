@@ -30,6 +30,7 @@ Conventional traffic systems struggle to adapt to changing road conditions which
 | Gradio | Used for creating a Graphical User Interface (GUI) the model integration nad simulation of the CCTV surveillance. |
 | Google Colab | Provided the virtual environment and computational resources such as GPU support for running and training the model. |
 | Roboflow | Used for hosting the dataset and performing data pre-processing. |
+| LabelImg       | Utilized for dataset annotation/labelling.                                   |
 | Display | Used for displaying inferenced images, training results and test images in the program notebook. |
 | Image | Used for creating python objects representing an image. |
 | Shutil | Used for high-level image file operations. |
@@ -88,6 +89,7 @@ The training procedure for the model involved mounting the drive in the Google c
 | Batch Size | 16 |
 | Activation Function | SiLU |
 | Momentum | 0.937 |
+|IoU Threshold | 0.7 |
 | Optimizer | auto (AdamW at initial layers for early convergence and SGD at final layers for fine tuning) |
 
 ### Evaluation Metrics
@@ -95,14 +97,14 @@ The training procedure for the model involved mounting the drive in the Google c
 | **Metric**      | **Value** | **Remarks**                                                                                                        |
 | --------------- | --------- | ------------------------------------------------------------------------------------------------------------------ |
 | **Precision**   | 0.774     | The model correctly identified most vehicles, with few false positives.                                            |
-| **Recall**      | 0.894     | Indicated high sensitivity meaning the system successfully detected most vehicles in traffic scenes.                     |
-| **IoU**         | 0.700     | Showed good overlap between predicted and actual bounding boxes, meaning accurate localization.                     |
+| **Recall**      | 0.894     | Indicated high sensitivity meaning the system successfully detected most vehicles in traffic scenes.               |
 | **mAP@50**      | 0.893     | Demonstrated strong detection accuracy at a relaxed IoU threshold (50%), showing reliable recognition performance. |
-| **mAP@50-95**   | 0.701     | Reflected consistent detection performance across multiple IoU thresholds, indicating robust model generalization.  |
-| **F1-Score**    | 0.830     | Balanced trade-off between precision and recall — overall strong detection reliability.                            |
-| **Box Loss**    | 0.722     | Indicated a moderate box regression error but also suggesting some room for improving bounding box precision.                            |
+| **mAP@50-95**   | 0.701     | Reflected consistent detection performance across multiple IoU thresholds, indicating robust model generalization. |
+| **F1-Score**    | 0.830     | Balanced trade-off between precision and recall indicating overall strong detection reliability.                            |
+| **Box Loss**    | 0.722     | Indicated a moderate box regression error but also suggesting some room for improving bounding box precision.      |
 | **Object Loss** | 0.455     | Indicated effective object classification, with minimal misidentification during detection.                        |
 
+### Results from Model Training
 
 <p align="center">
   <img src="Test Image 1.jpg" alt="Detection Results for Lane 1" width="250" />
