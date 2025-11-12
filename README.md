@@ -126,6 +126,8 @@ The training procedure for the model involved mounting the drive in the Google c
     <em> Fig 3: Confusion Matrix</em>
 </p>
 
+--- 
+
 ## 📈 Model Integration
 
 ### GUI Implementation
@@ -159,13 +161,21 @@ From the table above, the total cyclic time was 59 seconds and the allocation of
     <em> Fig 4: Vehicle Detection and Lane Allocation Results on the Integrated Platform </em>
 </p>
 
+---
+
 ## 🔮Future Work
 - Future research efforts should focus on enhancing the model’s accuracy, especially those capable of effectively handling visibility challenges under adverse weather condition.
+
+---
 
 ## 📚 References
 Obi-Obuoha A. , Rizama V.S. _"Computer Vision for Intelligent Traffic Monitoring and Control"_ Iconic Research And Engineering Journals Volume 8 Issue 5 2024 Page 392-405.
 [Access the Full Paper](https://www.irejournals.com/formatedpaper/1706535.pdf)
 
+---
+
 ## 📌 Note
 Please kindly note that this README file is a summarized version of the full implementation of this research. The complete implementation can be accessed via the [program script](Computer_Vision_for_Intelligent_Traffic_Monitoring_and_Control.ipynb) and [interface implementation](Computer_Vision_for_Intelligent_Traffic_Monitoring_and_Contol-Gradio.ipynb). Dataset and Model Weights can be provided upon request.
+
+---
 
