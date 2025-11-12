@@ -76,7 +76,7 @@ The train-test-validation split ratio of the dataset after pre-processing and au
 
 ### Model Training
 
-The training procedure for the model involved mounting the drive in the Google colab virtual environment, installing the ultralytics library, installing YOLO, importing the dataset from the Roboflow workspace, and finally training the model. The training time lasted for a total of 3.248 hours.
+The training procedure for the model involved mounting the drive in the Google colab virtual environment, installing the ultralytics library, importing YOLO, importing the dataset from the Roboflow workspace, and finally training the model. The training time lasted for a total of 3.248 hours.
 
 ### 🤖 Model Summary
 | Hyperparameter | Value |
