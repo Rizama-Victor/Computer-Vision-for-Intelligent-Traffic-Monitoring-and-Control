@@ -170,7 +170,7 @@ From the table above, the total cyclic time was 59 seconds and the allocation of
 
 ## 📚 References
 Obi-Obuoha A. , Rizama V.S. _"Computer Vision for Intelligent Traffic Monitoring and Control"_ Iconic Research And Engineering Journals Volume 8 Issue 5 2024 Page 392-405.
-[Access the Full Paper](https://www.irejournals.com/formatedpaper/1706535.pdf)
+[Access the Full Paper](https://www.irejournals.com/formatedpaper/1706535.pdf).
 
 ---
 
